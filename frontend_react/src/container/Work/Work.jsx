@@ -34,7 +34,7 @@ const Work = () => {
       setWorks(data);
       setFilterWork(data);
     })
-  }, [])
+  }, []);
   
 
   return (
