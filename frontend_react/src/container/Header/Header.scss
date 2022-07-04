@@ -50,8 +50,11 @@
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        align-items: flex-end;
+        align-items: center;
         flex-direction: column;
+        width: fit-content;
+        margin-left: 3rem;
+        margin-top: 2.5rem;
 
         .badge-cmp, .tag-cmp {
             padding: 1rem 2rem;
@@ -62,19 +65,79 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
 
+
         .tag-cmp {
             flex-direction: column;
-            margin-top: 3rem;
+            margin-top: 2rem;
         
             p {
                 width: 100%;
                 text-transform: uppercase;
                 text-align: center;
+                font-size: 1rem;
+                
+
+                &:hover {
+                    transform: rotateY(180deg);
+                }
+            }
+
+            &_cta {
+                width: 100%;
+                position: relative;
+                margin-top: 5rem;
+                width: fit-content;
+                padding: 1rem 2rem;
+                border-radius: 15px;
+                border: none;
+                cursor: pointer;
+                text-decoration: none;
+                color: var(--white-color);
+                background-color: var(--secondary-color);
+                z-index: 1;
+                
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+
+                &:hover {
+                    background-color: var(--secondary-color-dark);
+                    transform: translate(6px, 6px);
+
+                    &::after {
+                        border-color: transparent;
+                        transform: translate(0px, 0px);
+                    }
+                }
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid var(--secondary-color);
+                    transform: translate(6px, 6px);
+                    border-radius: 15px;
+                    z-index: 21;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .head-text {
+            img {
+                height: 60px;
+                width: auto;
             }
         }
         
         span {
             font-size: 2.5rem;
+            margin-top: auto;
     
             @media screen and (min-width: 2000px) {
                 font-size: 5rem;
@@ -110,32 +173,44 @@
         }
 
         div:nth-child(1) {
-            width: 100px;
-            height: 100px;
+            width: 250px;
+            height: 250px;
         }
         div:nth-child(2) {
-            margin: 1.75rem;
-            width: 120px;
-            height: 120px;
+            margin-left: 2.75rem;
+            width: 250px;
+            height: 250px;
         }
         div:nth-child(3) {
             width: 100px;
             height: 100px;
         }
+        div:nth-child(4) {
+            margin-left: 3.25rem;
+            width: 90px;
+            height: 90px;
+        }
 
         @media screen and (min-width: 2000px) {
             div:nth-child(1) {
-                width: 400px;
-                height: 400px;
+                margin-left: -1rem;
+                width: 220px;
+                height: 220px;
             }
             div:nth-child(2) {
-                margin: 1.75rem;
+                margin-left: 5.75rem;
+                width: 130px;
+                height: 130px;
+            }
+            div:nth-child(3) {
+                margin-left: 5.25rem;
                 width: 170px;
                 height: 170px;
             }
-            div:nth-child(3) {
-                width: 200px;
-                height: 200px;
+            div:nth-child(4) {
+                margin-left: 1.25rem;
+                width: 100px;
+                height: 100px;
             }
         }
 
@@ -158,11 +233,14 @@
         justify-content: flex-end;
         align-items: flex-end;
         position: relative;
+        padding: 1rem;
 
-        img {
-            width: 100%;
-            object-fit: contain;
+        .hero-img {
+            width: auto;
+            height: 70vh;
             z-index: 1;
+            object-fit: contain;
+            margin: auto;
         }
 
         .overlay-circle {

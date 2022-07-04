@@ -1,7 +1,8 @@
-.app__works {
-    flex: 1;
+.app__projects {
+    display: flex;
     width: 100%;
     flex-direction: column;
+    margin-top: 1rem;
   
     &-filter {
         display: flex;
@@ -46,7 +47,7 @@
         justify-content: center;
         align-items: center;
     
-        .app__works-item {
+        .app__projects-item {
             width: 270px;
             flex-direction: column;
         
@@ -144,7 +145,7 @@
             }
         }
     
-        .app__works-tag {
+        .app__projects-tag {
             position: absolute;
         
             padding: 0.5rem 1rem;
