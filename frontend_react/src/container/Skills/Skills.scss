@@ -1,7 +1,19 @@
- .app__skills {
-    flex: 1;
-    width: 100%;
-    flex-direction: column;
+#skills {
+  background: linear-gradient(55deg, var(--white-color) 30%, 
+  var(--secondary-color) 20%, 
+  var(--secondary-color) 75%, var(--white-color) 75%);
+}
+
+.app__skills {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+
+
+  .head-text {
+    margin-top: 1.5rem;
+    color: var(--white-color);
+  }
 
     &-container {
         width: 80%;

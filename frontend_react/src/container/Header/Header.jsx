@@ -32,7 +32,7 @@ const Header = () => {
             <div style={{ marginLeft: 20 }}>
               <p className="p-text">Hello, I am</p>
               <h1 className="head-text">
-                <img src={images.logo} alt="" />
+                <img src={images.logo} alt="logo" />
               </h1>
             </div>
           </div>

@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
         <div className="app__footer-card">
           <img src={images.location} alt="location" />
-          <a href="tel:+81-(123)-456-789" className="p-text">Shinjuku, Tokyo JAPAN</a>
+          <div className="p-text">Shinjuku, Tokyo JAPAN</div>
         </div>
       </div>
       { !isFormSubmited ? (
@@ -65,6 +65,15 @@ const Footer = () => {
           <h3 className="head-text">Thank you for getting in touch</h3>
         </div>
       }
+      <p class="footer__copy">&#169; AdrienPauchet. All right reserved <br />
+        Icons made by 
+        <a class="footer__copy-link" href="https://www.freepik.com">
+        &nbsp;Freepik
+        </a> from 
+        <a class="footer__copy-link" href="https://www.flaticon.com/">
+        &nbsp;www.flaticon.com
+        </a>
+      </p>
     </>
   )
 }
