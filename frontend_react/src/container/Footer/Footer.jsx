@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
+import { AiOutlineSend } from 'react-icons/ai';
 import './Footer.scss';
 
 const Footer = () => {
@@ -41,25 +42,23 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card">
           <img src={images.email} alt="email" />
-          <a href="mailto:adrien.pauchet@live.fr" className="p-text">hello@adrien.com</a>
+          <a href="mailto:adrien.pauchet@live.fr" className="p-text">grandchefdotkong@gmail.com</a>
         </div>
         <div className="app__footer-card">
-          <img src={images.mobile} alt="mobile" />
-          <a href="tel:+81-(123)-456-789" className="p-text">+81-(123)-456-789</a>
+          <img src={images.location} alt="location" />
+          <a href="tel:+81-(123)-456-789" className="p-text">Shinjuku, Tokyo JAPAN</a>
         </div>
       </div>
       { !isFormSubmited ? (
         <div className="app__footer-form app__flex">
-          <div className="app__flex">
+          <div className="app__flex inputs">
             <input type="text" placeholder="Your Name" name="name" value={name} onChange={handleChangeInput}  className="p-text" />
-          </div>
-          <div className="app_flex">
             <input type="text" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput}  className="p-text" />
           </div>
           <div>
             <textarea placeholder="Your Message" name="message" value={message} onChange={handleChangeInput} id="" cols="30" rows="10" className="p-text"></textarea>
           </div>
-          <button type="button" onClick={handleSubmit} className="p-text">{ loading ? "Sending": "Send Message "}</button>
+          <button type="button" onClick={handleSubmit} className="p-text">{ loading ? "Sending": "Send Message "}<AiOutlineSend /></button>
         </div>
       ) : 
         <div>
@@ -73,5 +72,5 @@ const Footer = () => {
 export default AppWrap(
   MotionWrap(Footer, 'app__footer'),
   'contact',
-  'app__whitebg'
+  'app__primarybg'
   );

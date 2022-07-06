@@ -15,12 +15,14 @@ import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
 import laravel from '../assets/laravel.png';
+import linux from '../assets/linux.png';
 
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 
+import location from '../assets/location.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/hero.png';
 import hero from '../assets/hero.svg';
@@ -39,8 +41,10 @@ export default {
   hero,
   javascript,
   mu5,
+  location,
   node,
   react,
+  linux,
   redux,
   sass,
   typescript,

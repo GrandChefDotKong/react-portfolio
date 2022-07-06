@@ -2,7 +2,10 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    margin-top: 1rem;
+
+    .head-text {
+        margin-top: 1.5rem;
+    }
   
     &-filter {
         display: flex;
