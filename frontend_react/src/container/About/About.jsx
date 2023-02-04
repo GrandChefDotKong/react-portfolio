@@ -23,7 +23,7 @@ const About = () => {
     <>
       <h2 className='head-text'>About me</h2>
       <div className="app__profiles">
-        <img src={images.aboutImage} alt="" />
+        <img src={images.aboutImage} alt="hello" />
         <p>
           Started as a hobbyist game developer and became a multidisciplinary 
           developer, with exentisive knowledge and years experience, working in 

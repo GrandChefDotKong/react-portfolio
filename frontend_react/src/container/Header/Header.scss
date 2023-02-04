@@ -63,6 +63,15 @@
             flex-direction: row;
             width: auto;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+            .terminal-icon {
+                font-size: 2.5rem;
+                display: flex;
+                justify-items: center;
+                @media screen and (min-width: 2000px) {
+                    font-size: 5rem;
+                }
+            }
         }
 
 
@@ -94,7 +103,7 @@
                 text-decoration: none;
                 color: var(--white-color);
                 background-color: var(--secondary-color);
-                box-shadow: 4px 4px var(--complementary-color);
+                box-shadow: 4px 4px var(--lightGray-color);
                 z-index: 231;
                 
                 display: flex;
@@ -105,7 +114,7 @@
                 &:hover {
                     transform: translate(-4px, -4px);
                     transform: scale(1.02);
-                    box-shadow: 10px 10px var(--complementary-color);
+                    box-shadow: 10px 10px var(--lightGray-color);
                 }
 
             }
@@ -115,15 +124,6 @@
             img {
                 height: 60px;
                 width: auto;
-            }
-        }
-        
-        span {
-            font-size: 2.5rem;
-            margin-top: auto;
-    
-            @media screen and (min-width: 2000px) {
-                font-size: 5rem;
             }
         }
     

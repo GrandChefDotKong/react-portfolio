@@ -1,7 +1,7 @@
 #skills {
-  background: linear-gradient(55deg, var(--white-color) 30%, 
-  var(--secondary-color) 20%, 
-  var(--secondary-color) 75%, var(--white-color) 75%);
+  background: linear-gradient(55deg, var(--white-color) 15%, 
+  var(--secondary-color) 15%, 
+  var(--secondary-color) 85%, var(--white-color) 85%);
 }
 
 .app__skills {
@@ -21,6 +21,7 @@
     
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
     
         @media screen and (max-width: 900px) {
         width: 100%;
@@ -28,13 +29,21 @@
         }
     }
 
+    &-title {
+        grid-column: 1/4;
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 700;
+        grid-row: 1;
+        margin: auto;
+    }
+
     &-list {
-        flex: 1;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+
         margin-right: 5rem;
     
         @media screen and (max-width: 900px) {
