@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './About.scss';
-import { motion } from 'framer-motion';
-import { urlFor, client } from '../../client';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { images } from '../../constants';
 import { AiOutlineCamera } from 'react-icons/ai';
@@ -11,17 +9,12 @@ import { GrGamepad } from 'react-icons/gr';
 import { GiCookingPot } from 'react-icons/gi';
 
 const About = () => {
-  const [abouts, setAbouts] = useState([]);
 
-  useEffect(() => {
-    const query = '*[_type == "abouts"]';
-    client.fetch(query).then(data => setAbouts(data))
-  }, [])
   
 
   return (
     <>
-      <h2 className='head-text'>About me</h2>
+      <h2 className='head-text'>About <span>me</span></h2>
       <div className="app__profiles">
         <img src={images.aboutImage} alt="hello" />
         <p>
@@ -34,7 +27,7 @@ const About = () => {
       </div>
       <section className="about__hoobies">
         <h3>
-          My hoobies
+          My hobbies :
         </h3>
         <ul>
           <li><AiOutlineCamera /> Photography</li>

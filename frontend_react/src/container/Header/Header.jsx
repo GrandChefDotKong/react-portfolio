@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import { animationControls, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { TerminalIcon } from '../../components/Terminal';
 import { images } from '../../constants';
 import { AppWrap } from '../../wrapper';
@@ -36,14 +36,10 @@ const Header = () => {
               </h1>
             </div>
           </div>
-          <div className="tag-cmp app__flex">
-            <p className="tag-cmp_text  p-text">Web Developer</p>
-          </div>
-          <div className="tag-cmp app__flex">
-            <p className="tag-cmp_text  p-text">App Developer</p>
-          </div>
-          <div className="tag-cmp app__flex">
-            <p className="tag-cmp_text  p-text">Game Developer</p>
+          <div className="tag-cmp">
+            <p className="tag-cmp_text p-text">Web Developer</p>
+            <p className="tag-cmp_text p-text">App Developer</p>
+            <p className="tag-cmp_text p-text">Game Developer</p>
           </div>
           <a href="#contact" className="tag-cmp_cta p-text">
             Contact me<AiOutlineSend />

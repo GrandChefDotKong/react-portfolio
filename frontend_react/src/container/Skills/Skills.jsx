@@ -32,7 +32,7 @@ const Skills = () => {
       <h2 className="head-text">Skills & Experience</h2>
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
-          <div className="app__skills-title">My Tech stack</div>
+          <div className="app__skills-title">My Tech stack :</div>
           { skills?.map((skill) => (
             <motion.div 
               whileInView={{ opacity: [0, 1] }}
@@ -48,7 +48,7 @@ const Skills = () => {
           ))}
         </motion.div>
         <motion.div className="app__skills-list">
-          <div className="app__skills-title">Tech i have experienced</div>
+          <div className="app__skills-title">Tech i have experienced :</div>
           { expSkills?.map((skill) => (
             <motion.div 
               whileInView={{ opacity: [0, 1] }}
@@ -64,7 +64,7 @@ const Skills = () => {
           ))}
         </motion.div>
         <motion.div className="app__skills-list">
-          <div className="app__skills-title">Tech I plan to learn</div>
+          <div className="app__skills-title">Tech I plan to learn :</div>
           { newSkills?.map((skill) => (
             <motion.div 
               whileInView={{ opacity: [0, 1] }}

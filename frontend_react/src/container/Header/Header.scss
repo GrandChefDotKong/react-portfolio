@@ -28,7 +28,7 @@
         flex-direction: column;
     }
     @media screen and (max-width: 450px) {
-        padding-top: 6rem 1rem 2rem;
+        padding: 1.3rem 1rem 2rem;
     }
 
     &-info {
@@ -43,6 +43,11 @@
         @media screen and (max-width: 1200px) {
             width: 100%;
             margin-right: 0rem;
+        }
+        @media screen and (max-width: 450px) {
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 0;
         }
     }
 
@@ -68,27 +73,34 @@
                 font-size: 2.5rem;
                 display: flex;
                 justify-items: center;
-                @media screen and (min-width: 2000px) {
-                    font-size: 5rem;
-                }
             }
         }
 
 
         .tag-cmp {
             flex-direction: column;
-            margin-top: 2rem;
+            margin-top: 3rem;
+            height: 18vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         
             p {
                 width: 100%;
                 text-transform: uppercase;
                 text-align: center;
-                font-size: 1rem;
-                
+                font-size: 1.1rem;
 
                 &:hover {
                     transform: rotateY(180deg);
                 }
+
+                @media screen and (max-width: 450px) {
+                    font-size: .9rem;
+                }
+
             }
 
             &_cta {
@@ -104,7 +116,6 @@
                 color: var(--white-color);
                 background-color: var(--secondary-color);
                 box-shadow: 4px 4px var(--lightGray-color);
-                z-index: 231;
                 
                 display: flex;
                 flex-direction: row;
@@ -117,12 +128,27 @@
                     box-shadow: 10px 10px var(--lightGray-color);
                 }
 
+                @media screen and (max-width: 450px) {
+                    margin-top: 2rem;
+                }
+
+
+            }
+
+            @media screen and (max-width: 450px) {
+                flex-direction: column;
+                margin-top: 1rem;
+                height: 15vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
             }
         }
 
         .head-text {
             img {
-                height: 60px;
+                height: 30px;
                 width: auto;
             }
         }
@@ -131,6 +157,14 @@
             justify-content: flex-start;
             align-items: flex-start;
         }
+
+        @media screen and (max-width: 450px) {
+            justify-content: center;
+            align-items: center;
+            margin-left: 0;
+            align-self: center;
+        }
+        
     }
 
     &-circles {
@@ -156,17 +190,17 @@
         }
 
         div:nth-child(1) {
-            width: 250px;
-            height: 250px;
+            width: 210px;
+            height: 210px;
         }
         div:nth-child(2) {
             margin-left: 2.75rem;
-            width: 250px;
-            height: 250px;
+            width: 180px;
+            height: 180px;
         }
         div:nth-child(3) {
-            width: 100px;
-            height: 100px;
+            width: 110px;
+            height: 110px;
         }
         div:nth-child(4) {
             margin-left: 3.25rem;
@@ -174,11 +208,11 @@
             height: 90px;
         }
 
-        @media screen and (min-width: 2000px) {
+        @media screen and (min-width: 1200px) {
             div:nth-child(1) {
                 margin-left: -1rem;
-                width: 220px;
-                height: 220px;
+                width: 240px;
+                height: 240px;
             }
             div:nth-child(2) {
                 margin-left: 5.75rem;
@@ -224,6 +258,10 @@
             z-index: 1;
             object-fit: contain;
             margin: auto;
+
+            @media screen and (max-width: 450px) {
+                height: 40vh;
+            }
         }
 
         .overlay-circle {
@@ -239,6 +277,9 @@
 
         @media screen and (max-width: 1200px) {
             margin: 2rem 0;
+        }
+
+        @media screen and (max-width: 450px) {
         }
     }
 }

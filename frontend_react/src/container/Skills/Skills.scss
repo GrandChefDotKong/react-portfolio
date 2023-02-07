@@ -2,6 +2,13 @@
   background: linear-gradient(55deg, var(--white-color) 15%, 
   var(--secondary-color) 15%, 
   var(--secondary-color) 85%, var(--white-color) 85%);
+
+  @media screen and (max-width: 900px) {
+    background: linear-gradient(55deg, var(--white-color) 5%, 
+    var(--secondary-color) 5%, 
+    var(--secondary-color) 95%, var(--white-color) 95%);
+  }
+
 }
 
 .app__skills {
@@ -24,8 +31,14 @@
         align-items: flex-start;
     
         @media screen and (max-width: 900px) {
-        width: 100%;
-        flex-direction: column;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 450px) {
+            margin-top: 3rem;
+            justify-content: center;
+            width: 90%;
         }
     }
 
@@ -36,6 +49,10 @@
         font-weight: 700;
         grid-row: 1;
         margin: auto;
+
+        @media screen and (max-width: 900px) {
+            font-size: 1.3rem;
+        }
     }
 
     &-list {
@@ -43,13 +60,10 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         grid-auto-rows: minmax(100px, auto);
-
         margin-right: 5rem;
     
         @media screen and (max-width: 900px) {
-        margin-right: 0;
-        justify-content: center;
-        align-items: center;
+            margin-right: 0;
         }
     }
 
@@ -70,6 +84,11 @@
             img {
                 width: 50%;
                 height: 50%;
+
+                @media screen and (max-width: 450px) {
+                    width: 60%;
+                    height: 60%;
+                }
             }
         
             &:hover {
@@ -82,14 +101,15 @@
             }
         
             @media screen and (max-width: 450px) {
-                width: 70px;
-                height: 70px;
+                width: 65px;
+                height: 65px;
             }
         }
         
         p {
             font-weight: 500;
             margin-top: 0.5rem;
+            text-align: center;
         }
         
         @media screen and (min-width: 2000px) {
@@ -97,64 +117,6 @@
         
             p {
                 margin-top: 1rem;
-            }
-        }
-    }
-
-    &-exp {
-
-        flex: 1;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-    
-        @media screen and (max-width: 900px) {
-            margin-top: 2rem;
-        }
-    
-        &-item {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: flex-start;
-            margin: 1rem 0;
-        }
-
-        &-works {
-            flex: 1;
-        
-            .app__skills-exp-work {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: flex-start;
-                margin-bottom: 1rem;
-                cursor: pointer;
-            
-                h4 {
-                    font-weight: 500;
-                }
-            
-                p {
-                    font-weight: 400;
-                    color: var(--gray-color);
-                    margin-top: 5px;
-                }
-            }
-        }
-  
-        &-year {
-            margin-right: 3rem;
-        
-            p {
-                font-weight: 800;
-                color: var(--secondary-color);
-            }
-        
-            @media screen and (max-width: 450px) {
-                margin-right: 1rem;
             }
         }
     }
