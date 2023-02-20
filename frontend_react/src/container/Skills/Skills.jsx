@@ -64,7 +64,7 @@ const Skills = () => {
           ))}
         </motion.div>
         <motion.div className="app__skills-list">
-          <div className="app__skills-title">Tech I plan to learn :</div>
+          <div className="app__skills-title">Tech I am learning in 2023 :</div>
           { newSkills?.map((skill) => (
             <motion.div 
               whileInView={{ opacity: [0, 1] }}

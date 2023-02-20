@@ -78,7 +78,7 @@
 
         .tag-cmp {
             flex-direction: column;
-            margin-top: 3rem;
+            margin-top: 5rem;
             height: 18vh;
 
             display: flex;
@@ -115,6 +115,7 @@
                 color: var(--white-color);
                 background-color: var(--secondary-color);
                 box-shadow: 4px 4px var(--lightGray-color);
+                font-size: 1.5rem;
                 
                 display: flex;
                 flex-direction: row;
@@ -129,6 +130,7 @@
 
                 @media screen and (max-width: 450px) {
                     margin-top: 2rem;
+                    font-size: 1.1rem;
                 }
 
 
@@ -136,7 +138,7 @@
 
             @media screen and (max-width: 450px) {
                 flex-direction: column;
-                margin-top: 1rem;
+                margin-top: 2rem;
                 height: 15vh;
                 display: flex;
                 flex-direction: column;
